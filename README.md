@@ -2,7 +2,7 @@
 
 # Font
 
-- [Anonymous Pro](https://www.marksimonson.com/fonts/view/anonymous-pro)
+- [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
 
 # Extensions
 
@@ -12,7 +12,7 @@ See my full list of extensions [here](https://gist.github.com/sbaezamella/e3490c
 
 - Current theme:
 
-  - [Horizon](https://github.com/jolaleye/horizon-theme-vscode)
+  - [Cobalt Next](https://github.com/davidleininger/cobaltnext-vscode)
 
 - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 - [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
@@ -52,40 +52,40 @@ See my full list of extensions [here](https://gist.github.com/sbaezamella/e3490c
 
 ```json
 {
-  "bracket-pair-colorizer-2.colors": [
-    "#5fb3b3",
-    "#c5a5c5",
-    "#5a9bcf",
-    "#fac863"
-  ],
-  "diffEditor.ignoreTrimWhitespace": false,
-  "editor.tabSize": 2,
-  "editor.wordWrap": "on",
-  "editor.fontFamily": "Anonymous Pro",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 18,
-  "editor.formatOnSave": true,
-  "editor.minimap.enabled": true,
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.snippetSuggestions": "top",
-  "editor.suggestSelection": "first",
-  "explorer.openEditors.visible": 0,
-  "emmet.includeLanguages": {
-    "javascript": "html"
-  },
-  "prettier.singleQuote": true,
-  "python.linting.enabled": false,
-  "python.pythonPath": "/bin/python",
-  "sync.autoUpload": false,
-  "sync.autoDownload": false,
-  "sync.gist": "1fe853ee6a30df81f6db1c4fdad33dbd",
-  "terminal.integrated.fontFamily": "monospace",
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.shell.windows": "D:\\Cygwin64\\bin\\bash.exe",
-  "terminal.integrated.shellArgs.windows": ["-lic", "cd $OLDPWD; exec zsh"],
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.settings.useSplitJSON": true,
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.colorTheme": "Horizon Italic"
+	"bracket-pair-colorizer-2.colors": [
+		"#5fb3b3",
+		"#c5a5c5",
+		"#5a9bcf",
+		"#fac863"
+	],
+	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.fontFamily": "Source Code Pro",
+	"editor.fontLigatures": true,
+	"editor.fontSize": 16,
+	"editor.formatOnSave": true,
+	"editor.minimap.enabled": true,
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.snippetSuggestions": "top",
+	"editor.suggestSelection": "first",
+	"editor.wordWrap": "on",
+	"explorer.openEditors.visible": 9,
+	"emmet.includeLanguages": {
+		"javascript": "html"
+	},
+	"prettier.singleQuote": true,
+	"prettier.useTabs": true,
+	"python.languageServer": "Microsoft",
+	"python.pythonPath": "/usr/bin/python",
+	"sync.autoDownload": false,
+	"sync.autoUpload": false,
+	"sync.gist": "1fe853ee6a30df81f6db1c4fdad33dbd",
+	"terminal.integrated.fontFamily": "MesloLGS NF",
+	"terminal.integrated.fontSize": 14,
+	"window.menuBarVisibility": "toggle",
+	"workbench.colorTheme": "Cobalt Next",
+	"workbench.editor.tabSizing": "shrink",
+	"workbench.settings.useSplitJSON": true,
+	"workbench.startupEditor": "newUntitledFile",
+	"workbench.iconTheme": "material-icon-theme"
 }
 ```
