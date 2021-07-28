@@ -1,10 +1,12 @@
 # VS Code Settings
 
-# Font
+This README describes my personal settings and configuration for Visual Studio Code editor.
 
-- [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
+## Font
 
-# Extensions
+- [Cascadia Code](https://github.com/microsoft/cascadia-code)
+
+## Extensions
 
 See my full list of extensions [here](https://gist.github.com/sbaezamella/e3490c75a01fb2878f0d8a0c51b493c8).
 
@@ -20,10 +22,33 @@ See my full list of extensions [here](https://gist.github.com/sbaezamella/e3490c
 
 ## Workflow
 
-- [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
-  - Automatically add HTML/XML close tag
+### HTML
+
 - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
   - Automatically rename paired HTML/XML tag
+- [HTML Snippets](https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets)
+
+### Flutter
+
+- [Awesome Flutter Snipets](https://marketplace.visualstudio.com/items?itemName=Nash.awesome-flutter-snippets)
+- [BLoC](https://marketplace.visualstudio.com/items?itemName=FelixAngelov.bloc)
+- [Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code)
+- [Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter)
+- [Pubspec Assist](https://marketplace.visualstudio.com/items?itemName=jeroen-meijer.pubspec-assist)
+
+### Java
+
+- [Java Extension Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
+
+### JavaScript
+
+- [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
+
+### Python
+
+- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+- [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
+- [Python](https://code.visualstudio.com/docs/editor/extension-marketplace)
 
 ## IntelliSense/AutoComplete
 
@@ -33,6 +58,7 @@ See my full list of extensions [here](https://gist.github.com/sbaezamella/e3490c
   - Autocompletes npm modules in import/require statements
 - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
   - Autocompletes filenames
+- [Tailwind Css IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
 ## Style/Formatting
 
@@ -40,52 +66,89 @@ See my full list of extensions [here](https://gist.github.com/sbaezamella/e3490c
   - Integrates ESLint JS
 - [Beautify](https://marketplace.visualstudio.com/items?itemName=hookyqr.beautify)
   - Automatically format javascript, JSON, CSS, Sass, and HTML files.
+- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+- [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
 
 ## Useful/Extra
 
 - [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
   - Display inline the size of the required/imported package
-- [VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
-  - Collaborative editing, debugging, and more inside VS Code
+- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+- [Peacock](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock)
 
-# Settings
+## Settings
 
 ```json
 {
-	"bracket-pair-colorizer-2.colors": [
-		"#5fb3b3",
-		"#c5a5c5",
-		"#5a9bcf",
-		"#fac863"
-	],
-	"diffEditor.ignoreTrimWhitespace": false,
-	"editor.fontFamily": "Source Code Pro",
-	"editor.fontLigatures": true,
-	"editor.fontSize": 16,
-	"editor.formatOnSave": true,
-	"editor.minimap.enabled": true,
-	"editor.multiCursorModifier": "ctrlCmd",
-	"editor.snippetSuggestions": "top",
-	"editor.suggestSelection": "first",
-	"editor.wordWrap": "on",
-	"explorer.openEditors.visible": 9,
-	"emmet.includeLanguages": {
-		"javascript": "html"
-	},
-	"prettier.singleQuote": true,
-	"prettier.useTabs": true,
-	"python.languageServer": "Microsoft",
-	"python.pythonPath": "/usr/bin/python",
-	"sync.autoDownload": false,
-	"sync.autoUpload": false,
-	"sync.gist": "1fe853ee6a30df81f6db1c4fdad33dbd",
-	"terminal.integrated.fontFamily": "MesloLGS NF",
-	"terminal.integrated.fontSize": 14,
-	"window.menuBarVisibility": "toggle",
-	"workbench.colorTheme": "Cobalt Next",
-	"workbench.editor.tabSizing": "shrink",
-	"workbench.settings.useSplitJSON": true,
-	"workbench.startupEditor": "newUntitledFile",
-	"workbench.iconTheme": "material-icon-theme"
+  "bracket-pair-colorizer-2.colors": [
+    "#5fb3b3",
+    "#c5a5c5",
+    "#5a9bcf",
+    "#fac863"
+  ],
+  "breadcrumbs.enabled": false,
+  "color-highlight.markerType": "underline", // requires Color Highlight Extension
+  "color-highlight.markRuler": false, // requires Color Highlight Extension
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.colorDecorators": false, // using Color Hightlight instead
+  "editor.fontFamily": "Cascadia Code, Operator Mono Medium, Source Code Pro",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.formatOnSave": true,
+  "editor.letterSpacing": 0.5,
+  "editor.lineHeight": 26,
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "emmet.includeLanguages": {
+    "javascript": "html"
+  },
+  "explorer.openEditors.visible": 9,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "prettier.singleQuote": true,
+  "prettier.useTabs": true,
+  "python.defaultInterpreterPath": "venv/bin/python",
+  "python.languageServer": "Microsoft",
+  "python.linting.flake8Enabled": true,
+  "python.linting.ignorePatterns": [
+    ".vscode/*.py",
+    "**/site-packages/**/*.py",
+    "env",
+    "*__pycache__"
+  ],
+  "python.showStartPage": false,
+  "python.testing.pytestEnabled": true,
+  "redhat.telemetry.enabled": false,
+  "settingsSync.keybindingsPerPlatform": false,
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontSize": 14,
+  "window.menuBarVisibility": "toggle",
+  "window.title": "(ツ)_/¯ ${dirty} ${activeEditorShort}",
+  "workbench.colorTheme": "Cobalt Next",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.settings.useSplitJSON": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  }
 }
 ```
