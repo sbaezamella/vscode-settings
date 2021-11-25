@@ -80,75 +80,92 @@ See my full list of extensions [here](https://gist.github.com/sbaezamella/e3490c
 
 ```json
 {
-  "bracket-pair-colorizer-2.colors": [
-    "#5fb3b3",
-    "#c5a5c5",
-    "#5a9bcf",
-    "#fac863"
-  ],
-  "breadcrumbs.enabled": false,
-  "color-highlight.markerType": "underline", // requires Color Highlight Extension
-  "color-highlight.markRuler": false, // requires Color Highlight Extension
-  "diffEditor.ignoreTrimWhitespace": false,
-  "editor.colorDecorators": false, // using Color Hightlight instead
-  "editor.fontFamily": "Cascadia Code, Operator Mono Medium, Source Code Pro",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 16,
-  "editor.formatOnSave": true,
-  "editor.letterSpacing": 0.5,
-  "editor.lineHeight": 26,
-  "editor.suggestSelection": "first",
-  "editor.tabSize": 2,
-  "editor.wordWrap": "on",
-  "emmet.includeLanguages": {
-    "javascript": "html"
-  },
-  "explorer.openEditors.visible": 9,
-  "files.exclude": {
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  },
-  "notebook.cellToolbarLocation": {
-    "default": "right",
-    "jupyter-notebook": "left"
-  },
-  "prettier.singleQuote": true,
-  "prettier.useTabs": true,
-  "python.defaultInterpreterPath": "venv/bin/python",
-  "python.languageServer": "Microsoft",
-  "python.linting.flake8Enabled": true,
-  "python.linting.ignorePatterns": [
-    ".vscode/*.py",
-    "**/site-packages/**/*.py",
-    "env",
-    "*__pycache__"
-  ],
-  "python.showStartPage": false,
-  "python.testing.pytestEnabled": true,
-  "redhat.telemetry.enabled": false,
-  "settingsSync.keybindingsPerPlatform": false,
-  "terminal.integrated.fontFamily": "MesloLGS NF",
-  "terminal.integrated.fontSize": 14,
-  "window.menuBarVisibility": "toggle",
-  "window.title": "(ツ)_/¯ ${dirty} ${activeEditorShort}",
-  "workbench.colorTheme": "Cobalt Next",
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
-  },
-  "workbench.editor.tabSizing": "shrink",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.settings.useSplitJSON": true,
-  "workbench.startupEditor": "newUntitledFile",
-  "[dart]": {
+    "bracket-pair-colorizer-2.colors": [
+        "#5fb3b3",
+        "#c5a5c5",
+        "#5a9bcf",
+        "#fac863"
+    ],
+    "color-highlight.markerType": "underline", // requires Color Highlight Extension
+    "color-highlight.markRuler": false, // requires Color Highlight Extension
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.colorDecorators": false, // using Color Hightlight instead
+    "editor.fontFamily": "Cascadia Code, Operator Mono Medium, Source Code Pro",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
     "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "editor.selectionHighlight": false,
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.letterSpacing": 0.5,
+    "editor.lineHeight": 26,
     "editor.suggestSelection": "first",
-    "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false
-  }
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "emmet.includeLanguages": {
+        "javascript": "html"
+    },
+    "explorer.openEditors.visible": 9,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "files.insertFinalNewline": true,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "prettier.singleQuote": true,
+    "prettier.useTabs": true,
+    "python.showStartPage": false,
+    "python.testing.pytestEnabled": true,
+    "redhat.telemetry.enabled": false,
+    "settingsSync.keybindingsPerPlatform": false,
+    "sourcery.token": "user_lKBnF0g_PB262PCUBGioU37HbkyIPPJkGdW_BLQ7S_N9CRJtNT7OiurzShI",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontSize": 14,
+    "window.menuBarVisibility": "toggle",
+    // "window.title": "(ツ)_/¯ ${dirty} ${activeEditorShort}",
+    "window.title": "${dirty}${activeEditorShort} / ${rootName}",
+    "workbench.colorTheme": "Cobalt Next",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.settings.useSplitJSON": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "sqltools.useNodeRuntime": true,
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "latex-workshop.view.pdf.viewer": "tab",
+    "eslint.format.enable": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "sonarlint.rules": {
+        "typescript:S1488": {
+            "level": "off"
+        }
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
 ```
